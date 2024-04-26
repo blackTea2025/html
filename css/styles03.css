@@ -1,0 +1,14 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+.image img {
+    width: 500px; /* 设置图片的宽度 */
+    height: auto; 
+}

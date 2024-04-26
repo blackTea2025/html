@@ -1,0 +1,31 @@
+#image3 {
+    width: 400px; 
+    height: 200px; 
+}
+
+#login img {
+    margin-left: 20px; /* 设置图片与表单之间的间距 */
+    max-width: 100%; /* 设置图片最大宽度为其父元素的100% */
+}
+
+#login {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 在主轴上居中 */
+    align-items: center; /* 在交叉轴上居中 */
+    text-align: center; /* 将文本居中 */
+    margin-right: 20px; /* 为了与图片之间留出一些空间 */
+}
+
+#login-form {
+    margin: 0 auto; /* 居中显示表单 */
+}
+
+footer {
+    font-size: 20px;
+    color: #fff; 
+    background-color: #333; /* 改变背景颜色为深灰色 */
+    padding: 20px; /* 添加内边距增加可读性 */
+    text-align: center; /* 文本居中 */
+    font-family: Arial, sans-serif; /* 设置字体样式 */
+}
+

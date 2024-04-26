@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeHub</title>
+        <link rel="stylesheet" href="css/styles01.css">
+    </head>
+</nav>
+
+<body>
+    <header>
+        <h1>CodeHub——全国编程交流创新平台</h1>
+        <nav> 
+            <ul class="nav-links">
+                <li><a href="introduce.html">平台简介</a></li>
+                <li><a href="posts.html">Code小巷</a></li>
+                <li><a href="create_post.html">个人分享</a></li>
+                <li><a href="bug_cracker.html">BUG破解站</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">社团</a>
+                    <div class="dropdown-content">
+                        <a href="my_clubs.html">我的社团</a>
+                        <a href="join_clubs.html">加入社团</a>
+                    </div>
+                </li>
+                <li><a href="study.html">自习室</a></li>
+                <li><a href="login.html">用户登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="image-slider">
+        <div class="image-container">
+            <img id="image1" src="image/5.jpg" alt="Image 1">
+            <img id="image2" src="image/6.jpg" alt="Image 2">
+            <img id="image3" src="image/4.jpg" alt="Image 3">
+            <!-- 添加更多图片 -->
+        </div>
+        <div class="arrow left" onclick="prevImage()">&lt;</div>
+        <div class="arrow right" onclick="nextImage()">&gt;</div>
+    </section>
+
+    <main>
+        <section id="posts">
+            <h2>帖子列表:</h2>
+            <!-- 这里放置显示帖子的内容 -->
+        </section>
+    </main>
+    <footer>
+        2024
+    </footer>
+    <script src="templates/js01.js"></script>
+</body>
+
+</html>

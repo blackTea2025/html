@@ -1,0 +1,208 @@
+
+/* 主页 */
+
+header h1 {
+    text-shadow: 10px 10px 4px #000000; /* 添加文字阴影，参数依次为水平偏移、垂直偏移和模糊半径 */
+}
+
+/* header h1 {
+    font-family: "Times New Roman", serif; /* 使用华丽的字体 *
+    font-size: 36px; /* 设置字体大小 *
+    font-weight: bold; /* 设置字体粗细 *
+} */
+/*
+ header h1 {
+    background: linear-gradient(to right, #ff00ff, #00ffff); /* 添加渐变背景 *
+    -webkit-background-clip: text; /* 使用文本作为背景裁剪 *
+    color: transparent; /* 隐藏文本颜色 *
+    font-weight: bold; /* 设置字体粗细 *
+}
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部样式 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* 导航样式 */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 主要内容样式 */
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* 导航样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 导航链接样式 */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+    margin: 0 ; /* 添加负的外边距来实现间隔 */
+}
+
+.nav-links li {
+    flex: 1; /* 均分宽度 */
+    border-left: 1px solid #fff; /* 添加左边框 */
+    border-right: 1px solid #fff; /* 添加右边框 */
+    margin-right: -1px;
+}
+
+.nav-links li:first-child {
+    border-left: none; /* 去除第一个元素的左边框 */
+}
+
+.nav-links li:last-child {
+    border-right: none; /* 去除最后一个元素的右边框 */
+}
+
+/* 顶行样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem; /* 添加内边距，增加可读性 */
+    border-radius: 5px; /* 添加圆角 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none; /* 去除下划线 */
+    font-size: 16px; /* 设置字体大小 */
+    margin: 0 10px; /* 调整链接之间的间距 */
+}
+
+
+.nav-links li a:hover {
+    background-color: #555;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+/* 图片容器样式 */
+.image-container {
+    position: relative;
+    width: 100%; /* 确保图片容器占据父元素的宽度 */
+    height: 400px;
+    overflow: hidden; /* 隐藏溢出部分的图片 */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 400px;
+    transition: opacity 0.5s ease-in-out; /* 添加过渡效果，透明度变化时耗时0.5秒，使用缓动函数 */
+}
+
+.image-container img:first-child {
+    display: block;
+}
+
+/* 箭头样式 */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+/* 图片滑动容器样式 */
+#image-slider {
+    overflow-x: auto;
+    /* 允许水平滚动 */
+    white-space: nowrap;
+    /* 防止图片换行 */
+}
+
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%; /* 使下拉列表相对于其父元素（.dropdown）的底部对齐 */
+    left: 5; /* 使下拉列表左边与其父元素的左边对齐 */
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* 居中下拉列表内容 */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    /* 修改为你想要的鼠标悬停时的背景颜色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
