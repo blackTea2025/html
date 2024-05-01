@@ -1,0 +1,151 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* 页眉样式 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1%;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+    margin: 0 ; /* 添加负的外边距来实现间隔 */
+}
+
+.nav-links li {
+    flex: 1; /* 均分宽度 */
+    border-left: 1px solid #fff; /* 添加左边框 */
+    border-right: 1px solid #fff; /* 添加右边框 */
+    margin-right: -1px;
+}
+
+.nav-links li:first-child {
+    border-left: none; /* 去除第一个元素的左边框 */
+}
+
+.nav-links li:last-child {
+    border-right: none; /* 去除最后一个元素的右边框 */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem; /* 添加内边距，增加可读性 */
+    border-radius: 5px; /* 添加圆角 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none; /* 去除下划线 */
+    font-size: 16px; /* 设置字体大小 */
+    margin: 0 10px; /* 调整链接之间的间距 */
+}
+
+
+.nav-links li a:hover {
+    background-color: #555;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+/* 登录表单样式 */
+section#login {
+    text-align: right;
+    margin-top: 50px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center; /* 居中内容 */
+    width: 400px; /* 调整表单宽度 */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%; /* 让输入框填充表单宽度 */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 创意页眉样式 */
+.creative-header {
+    background-image: url('../image/7.jpg'); /* 替换为你喜欢的背景图像 */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c1a6f; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
