@@ -5,20 +5,6 @@ header h1 {
     text-shadow: 10px 10px 4px #000000; /* 添加文字阴影，参数依次为水平偏移、垂直偏移和模糊半径 */
 }
 
-/* header h1 {
-    font-family: "Times New Roman", serif; /* 使用华丽的字体 *
-    font-size: 36px; /* 设置字体大小 *
-    font-weight: bold; /* 设置字体粗细 *
-} */
-/*
- header h1 {
-    background: linear-gradient(to right, #ff00ff, #00ffff); /* 添加渐变背景 *
-    -webkit-background-clip: text; /* 使用文本作为背景裁剪 *
-    color: transparent; /* 隐藏文本颜色 *
-    font-weight: bold; /* 设置字体粗细 *
-}
-*/
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
