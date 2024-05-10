@@ -5,6 +5,19 @@ header h1 {
     text-shadow: 10px 10px 4px #000000; /* 添加文字阴影，参数依次为水平偏移、垂直偏移和模糊半径 */
 }
 
+.title-container {
+    display: flex;
+    align-items: center; /* 垂直居中标题和图片 */
+}
+
+.title-text {
+    margin-right: 20px; /* 标题右边距 */
+}
+
+.title-image {
+    max-width: 200px; /* 图片最大宽度 */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
