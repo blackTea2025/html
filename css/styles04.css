@@ -1,0 +1,219 @@
+
+header h1 {
+    text-shadow: 10px 10px 4px #000000; /* 添加文字阴影，参数依次为水平偏移、垂直偏移和模糊半径 */
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* 垂直居中标题和图片 */
+}
+
+.title-text {
+    margin-right: 20px; /* 标题右边距 */
+}
+
+.title-image {
+    max-width: 200px; /* 图片最大宽度 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部样式 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* 导航样式 */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 主要内容样式 */
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* 导航样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 导航链接样式 */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+    margin: 0 ; /* 添加负的外边距来实现间隔 */
+}
+
+.nav-links li {
+    flex: 1; /* 均分宽度 */
+    border-left: 1px solid #fff; /* 添加左边框 */
+    border-right: 1px solid #fff; /* 添加右边框 */
+    margin-right: -1px;
+}
+
+.nav-links li:first-child {
+    border-left: none; /* 去除第一个元素的左边框 */
+}
+
+.nav-links li:last-child {
+    border-right: none; /* 去除最后一个元素的右边框 */
+}
+
+/* 顶行样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem; /* 添加内边距，增加可读性 */
+    border-radius: 5px; /* 添加圆角 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none; /* 去除下划线 */
+    font-size: 16px; /* 设置字体大小 */
+    margin: 0 10px; /* 调整链接之间的间距 */
+}
+
+
+.nav-links li a:hover {
+    background-color: #555;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%; /* 使下拉列表相对于其父元素（.dropdown）的底部对齐 */
+    left: 5; /* 使下拉列表左边与其父元素的左边对齐 */
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* 居中下拉列表内容 */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    /* 修改为你想要的鼠标悬停时的背景颜色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo {
+    max-width: 200px;
+    margin-right: 1rem;
+}
+
+main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.club-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.club-list li {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.join-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #218838;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
