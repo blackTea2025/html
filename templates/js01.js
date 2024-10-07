@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // 设置所有图片的初始透明度为0
     images.forEach(function(image) {
         image.style.opacity = '0';
-    });
+    }
+    );
 
     // 显示指定索引的图片并设置透明度渐变
     function showImage(index) {
