@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-indent: 2em; /* 首行缩进 */
+}
+
+ul {
+    list-style-type: disc;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.team {
+    margin: 20px 0;
+}
+
+.team h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-around; /* 居中对齐 */
+}
+
+.team-member {
+    flex: 0 1 30%; /* 每个成员占30%的宽度 */
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    text-align: center; /* 内容居中 */
+}
+
+.team-member img {
+    width: 80%; /* 根据需要调整 */
+    height: auto; /* 保持比例 */
+    border-radius: 5px; /* 圆角 */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: #333; /* 深色背景 */
+    color: white; /* 白色文字 */
+    text-align: center; /* 中心对齐 */
+    padding: 20px 0; /* 内边距 */
+    margin-top: 20px; /* 上边距 */
+}
+
+.footer-content {
+    max-width: 800px; /* 最大宽度 */
+    margin: 0 auto; /* 居中 */
+}
+
+.footer a {
+    color: #f9f9f9; /* 链接颜色 */
+    text-decoration: none; /* 无下划线 */
+    margin: 0 10px; /* 间距 */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* 悬停时下划线 */
+}

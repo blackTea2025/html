@@ -113,3 +113,75 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 0.5rem 0; /* 添加上下间距 */
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column; /* 垂直排列表单元素 */
+    margin: 1rem 0; /* 添加上下间距 */
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 90%; /* 设置宽度 */
+    max-width: 400px; /* 限制最大宽度 */
+    margin: 0.5rem auto; /* 自动水平居中 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #666; /* 悬停效果 */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px; /* 添加左右间距 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc; /* 悬停时改变颜色 */
+}
+
+#formMessage {
+    color: green;
+    margin-top: 10px; /* 添加间距 */
+}
+
+
