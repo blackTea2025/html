@@ -17,6 +17,15 @@ header h1 {
     max-width: 200px; /* 图片最大宽度 */
 }
 
+/* 顶行样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem; /* 添加内边距，增加可读性 */
+    border-radius: 5px; /* 添加圆角 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+}
+
 nav ul {
     list-style-type: none;
 }
@@ -54,15 +63,6 @@ nav ul li a {
 
 .nav-links li:last-child {
     border-right: none; /* 去除最后一个元素的右边框 */
-}
-
-/* 顶行样式 */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem; /* 添加内边距，增加可读性 */
-    border-radius: 5px; /* 添加圆角 */
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
 }
 
 .nav-links li a {
@@ -114,9 +114,91 @@ nav {
     display: block;
 }
 
-main {
-    padding: 1rem;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    max-width: 800px;                   /* 设置主内容区域的最大宽度 */
+    margin: 20px auto;                 /* 垂直方向上留出20像素的外边距，水平居中显示 */
+    padding: 20px;                      /* 添加内边距以避免内容紧贴边缘 */
+    background-color: #ffffff;         /* 设置背景颜色为白色 */
+    border-radius: 8px;                /* 添加圆角效果 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果，增加层次感 */
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.club-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.club-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.club-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.club-item button:hover {
+    background-color: #e60000;
+}
+
+#addClubForm {
+    display: flex;
+    margin-top: 20px;
+}
+
+#newClub {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addClubForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#addClubForm button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    margin-top: 10px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
 
 footer {
     background-color: #333;

@@ -37,19 +37,23 @@
             <h2>我的社团</h2>
             <ul class="club-list">
                 <!-- 用户已加入的社团 -->
-                <li>已加入的社团1</li>
+                <li class="club-item">已加入的社团1 <button class="remove-btn">移除</button></li>
+                <li class="club-item">已加入的社团2 <button class="remove-btn">移除</button></li>
+                <li class="club-item">已加入的社团3 <button class="remove-btn">移除</button></li>
                 <!-- 其他已加入的社团 -->
             </ul>
         </section>
-
+    
         <section>
             <h3>加入新社团</h3>
             <form id="addClubForm">
-                <input type="text" id="newClub" placeholder="输入新社团名称">
+                <input type="text" id="newClub" placeholder="输入新社团名称" required>
                 <button type="submit">添加社团</button>
             </form>
+            <p id="feedback" class="hidden"></p>
         </section>
     </main>
+    
 
     <!-- 社团信息弹出窗口 -->
     <div id="clubModal" class="modal">

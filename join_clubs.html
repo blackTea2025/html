@@ -35,9 +35,22 @@
     <main>
         <section id="join-clubs">
             <h2>加入社团</h2>
+            <p>找到你感兴趣的编程社团并加入，与更多的编程爱好者一起交流成长！</p>
             <ul class="club-list">
-                <li>茶客帮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建者：二两红茶<button class="join-btn">加入</button></li>
+                <li class="club-item">
+                    <span>茶客帮 - 创建者：二两红茶</span>
+                    <button class="join-btn" data-club="茶客帮">加入</button>
+                </li>
+                <li class="club-item">
+                    <span>代码狂人 - 创建者：一杯咖啡</span>
+                    <button class="join-btn" data-club="代码狂人">加入</button>
+                </li>
+                <li class="club-item">
+                    <span>前端先锋 - 创建者：小李</span>
+                    <button class="join-btn" data-club="前端先锋">加入</button>
+                </li>
             </ul>
+            <p id="feedback" class="hidden">正在加入社团...</p>
         </section>
     </main>
 
@@ -49,5 +62,7 @@
             <a href="#">隐私政策</a>
         </div>
     </footer>
+
+    <script src="js/joinclubs.js"></script>
 </body>
 </html>
