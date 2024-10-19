@@ -16,7 +16,7 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="introduce.html">平台简介</a></li>
+                <li><a href="about.html">平台简介</a></li>
                 <li><a href="posts.html" id="postsLink">Code小巷</a></li>
                 <li><a href="create_post.html" id="createPostLink">个人分享</a></li>
                 <li><a href="bug_cracker.html" id="bugCrackerLink">BUG破解站</a></li>
@@ -31,6 +31,15 @@
                 <li><a href="login.html">用户登录</a></li>
         </nav>
     </header>
+    <button id="toggleSidebar" class="sidebar-toggle">我要参赛！</button>
+    <aside class="sidebar hidden" id="sidebar">
+        <h3>点击查看</h3>
+        <ul>
+            <li><a href="competition.html" id="competitionLink">竞赛1</a></li>
+            <li><a href="competition.html" id="competitionLink">竞赛2</a></li>
+            <li><a href="competition.html" id="competitionLink">竞赛3</a></li>
+        </ul>
+    </aside>
 
     <section id="image-slider">
         <div class="image-container">
@@ -44,25 +53,55 @@
     </section>
 
     <main>
-        <section id="posts">
-            <h2>帖子列表:</h2>
-            <!-- 这里放置显示帖子的内容 -->
+        <section id="popular-courses">
+            <h2>热门课程推荐</h2>
+            <div class="course-container">
+                <div class="course">
+                    <img src="image/course1.jpg" alt="Course 1">
+                    <h3>Python基础</h3>
+                    <p>快速掌握Python编程的核心技能。</p>
+                </div>
+                <div class="course">
+                    <img src="image/course2.jpg" alt="Course 2">
+                    <h3>Web开发</h3>
+                    <p>学习如何从零构建网站，涵盖HTML、CSS、JavaScript等内容。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>用户热门评价</h2>
+            <div class="testimonial">
+                <p>“通过CodeHub学习，我成功找到了我的第一份编程工作！”</p>
+                <h4>- 用户A</h4>
+            </div>
+            <div class="testimonial">
+                <p>“平台上的教程非常全面，老师讲解清晰易懂。”</p>
+                <h4>- 用户B</h4>
+            </div>
+        </section>
+
+        <section id="news-events">
+            <h2>最新资讯与活动</h2>
+            <ul>
+                <li>2024年10月31日：全国编程大赛即将开始，快来报名吧！</li>
+                <li>2024年11月10日：JavaScript在线讲座</li>
+            </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 CodeHub. All rights reserved.</p>
         <div class="footer-links">
-            <a href="#">关于我们</a>
-            <a href="#">联系我们</a>
+            <a href="#">关于我们</a>|
+            <a href="#">联系我们</a>|
             <a href="#">隐私政策</a>
         </div>
     </footer>
     <script src="templates/home.js"></script>
     <script>
-        // 检查用户是否已登录
-        // 您用于确定用户是否已登录的逻辑
-        const isLoggedIn = ;
-        // 重定向到登录页面的函数
+        // 判断用户是否已登录
+        const isLoggedIn = localStorage.getItem('userLoggedIn') === 'true';
+
         const redirectToLogin = () => {
             window.location.href = 'login.html';
         };
@@ -74,7 +113,20 @@
             document.getElementById('myClubsLink').addEventListener('click', redirectToLogin);
             document.getElementById('joinClubsLink').addEventListener('click', redirectToLogin);
             document.getElementById('studyLink').addEventListener('click', redirectToLogin);
+        } else {
+            document.getElementById('loginLink').textContent = '退出登录';
+            document.getElementById('loginLink').addEventListener('click', function () {
+                localStorage.setItem('userLoggedIn', 'false');
+                window.location.reload();
+            });
         }
+
+        const sidebar = document.getElementById('sidebar');
+        const toggleButton = document.getElementById('toggleSidebar');
+
+        toggleButton.addEventListener('click', function() {
+            sidebar.classList.toggle('hidden');
+        });
     </script>
 </body>
 

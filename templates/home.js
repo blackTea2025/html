@@ -65,3 +65,33 @@ document.addEventListener("DOMContentLoaded", function() {
     showImage(0);
     startSlideshow();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var courses = document.querySelectorAll('.course');
+
+    courses.forEach(function (course) {
+        // 添加鼠标移入移出事件
+        course.addEventListener('mouseover', function () {
+            course.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.2)";
+        });
+
+        course.addEventListener('mouseout', function () {
+            course.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        });
+
+        // 为课程添加点击事件，弹出详细信息
+        course.addEventListener('click', function () {
+            alert("更多课程详情即将上线！");
+        });
+    });
+
+    // 用户评价区添加淡入动画效果
+    var testimonials = document.querySelectorAll('.testimonial');
+    testimonials.forEach(function (testimonial, index) {
+        testimonial.style.opacity = 0;
+        testimonial.style.transition = "opacity 1s ease";
+        setTimeout(function () {
+            testimonial.style.opacity = 1;
+        }, index * 500);  // 每个评价延迟0.5秒淡入
+    });
+});

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞赛 - CodeHub</title>
+    <link rel="stylesheet" href="css/competition.css"> <!-- 你可以单独为竞赛页面设计 CSS -->
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="title-text">CodeHub——全国编程交流创新平台</h1>
+            <img class="title-image" src="image/10.jpg" alt="图片">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">平台简介</a></li>
+                <li><a href="posts.html" id="postsLink">Code小巷</a></li>
+                <li><a href="create_post.html" id="createPostLink">个人分享</a></li>
+                <li><a href="bug_cracker.html" id="bugCrackerLink">BUG破解站</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">社团</a>
+                    <div class="dropdown-content">
+                        <a href="my_clubs.html" id="myClubsLink">我的社团</a>
+                        <a href="join_clubs.html" id="joinClubsLink">加入社团</a>
+                    </div>
+                </li>
+                <li><a href="study.html" id="studyLink">自习室</a></li>
+                <li><a href="login.html">用户登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="competition-info">
+            <h2>当前竞赛</h2>
+            <div class="competition-details">
+                <h3>全国编程大赛</h3>
+                <p>比赛时间：2024年10月31日</p>
+                <p>报名截止时间：2024年10月25日</p>
+                <p>简介：全国编程大赛旨在挖掘和培养年轻的编程人才，欢迎所有对编程有热情的同学参与！</p>
+                <a href="#" class="register-btn">立即报名</a>
+            </div>
+        </section>
+    
+        <section id="past-competitions">
+            <h2>往届竞赛</h2>
+            <ul>
+                <li><a href="2023-details"><i class="fa fa-trophy"></i> 2023年编程大赛：一等奖、二等奖、三等奖获奖名单</a></li>
+                <li><a href=""><i class="fa fa-code"></i> 2022年编程马拉松：参赛团队和成绩</a></li>
+                <li><a href=""><i class="fa fa-university"></i> 2021年全国高校编程竞赛：参赛选手及其表现</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeHub. 保留所有权利</p>
+        <p>分享我们的编程大赛！</p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://weibo.com" target="_blank">微博</a>
+        <div class="footer-links">
+            <a href="#">关于我们</a>|
+            <a href="#">联系我们</a>|
+            <a href="#">隐私政策</a>
+        </div>
+    </footer>
+
+    <script src="templates/competition.js"></script>
+
+</html>

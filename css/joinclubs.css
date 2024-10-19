@@ -130,13 +130,14 @@ footer {
     text-align: center;
 }
 
+
 .footer-links {
     display: flex;
     justify-content: center;
 }
 
 .footer-links a {
-    color: #fff;
+    color: #4CAF50;
     margin: 0 1rem;
     text-decoration: none;
     transition: color 0.3s;

@@ -21,73 +21,38 @@ header h1 {
 }
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 /* 导航样式 */
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* 主要内容样式 */
-main {
-    padding: 1rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-/* 底部样式 */
-footer {
+nav {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
 
-/* 导航样式 */
-/* 导航链接样式 */
 .nav-links {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex; /* 使用 Flexbox 布局 */
-    margin: 0 ; /* 添加负的外边距来实现间隔 */
 }
 
 .nav-links li {
-    flex: 1; /* 均分宽度 */
-    border-left: 1px solid #fff; /* 添加左边框 */
-    border-right: 1px solid #fff; /* 添加右边框 */
-    margin-right: -1px;
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .nav-links li:first-child {
-    border-left: none; /* 去除第一个元素的左边框 */
+    border-left: none;
 }
 
 .nav-links li:last-child {
-    border-right: none; /* 去除最后一个元素的右边框 */
-}
-
-/* 顶行样式 */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem; /* 添加内边距，增加可读性 */
-    border-radius: 5px; /* 添加圆角 */
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+    border-right: none;
 }
 
 .nav-links li a {
@@ -96,15 +61,258 @@ nav {
     padding: 10px 0;
     text-decoration: none;
     color: #fff;
-    text-decoration: none; /* 去除下划线 */
-    font-size: 16px; /* 设置字体大小 */
+    font-size: 16px;
     margin: 0 10px; /* 调整链接之间的间距 */
 }
 
-
 .nav-links li a:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%; /* 使下拉列表相对于其父元素（.dropdown）的底部对齐 */
+    left: 5; /* 使下拉列表左边与其父元素的左边对齐 */
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* 居中下拉列表内容 */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
     background-color: #555;
-    /* 鼠标悬停时的背景颜色 */
+    /* 修改为你想要的鼠标悬停时的背景颜色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+/* 热门课程推荐样式 */
+#popular-courses {
+    margin-bottom: 3rem;
+}
+
+#popular-courses h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.course h3 {
+    color: #007bff;
+    margin: 1rem 0 0.5rem;
+}
+
+.course p {
+    padding: 0 1rem 1rem;
+    color: #555;
+}
+
+/* 用户评价与成功故事样式 */
+#testimonials {
+    margin-bottom: 3rem;
+}
+
+#testimonials h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 最新资讯与活动样式 */
+#news-events {
+    margin-bottom: 3rem;
+}
+
+#news-events h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#news-events ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#news-events ul li {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#news-events ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#news-events ul li::before {
+    content: "📅";
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 90%;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* 隐藏状态 */
+.sidebar.hidden {
+    transform: translateX(100%); /* 把侧边栏移出视野 */
+}
+
+/* 侧边栏展开按钮 */
+.sidebar-toggle {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sidebar-toggle:hover {
+    background-color: #555;
+}
+
+/* 侧边栏内容样式 */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ccc; /* 悬停时改变颜色 */
 }
 
 /* 图片容器样式 */
@@ -123,6 +331,7 @@ nav {
     width: 100%;
     height: 400px;
     transition: opacity 0.5s ease-in-out; /* 添加过渡效果，透明度变化时耗时0.5秒，使用缓动函数 */
+    z-index: 1;
 }
 
 .image-container img:first-child {
@@ -160,36 +369,3 @@ nav {
     /* 防止图片换行 */
 }
 
-
-/* 下拉菜单样式 */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    top: 100%; /* 使下拉列表相对于其父元素（.dropdown）的底部对齐 */
-    left: 5; /* 使下拉列表左边与其父元素的左边对齐 */
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-align: center; /* 居中下拉列表内容 */
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #555;
-    /* 修改为你想要的鼠标悬停时的背景颜色 */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}

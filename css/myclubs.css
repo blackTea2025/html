@@ -17,52 +17,33 @@ header h1 {
     max-width: 200px; /* 图片最大宽度 */
 }
 
-/* 顶行样式 */
 nav {
     background-color: #333;
     color: #fff;
-    padding: 1rem; /* 添加内边距，增加可读性 */
-    border-radius: 5px; /* 添加圆角 */
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* 添加阴影效果 */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* 导航样式 */
-/* 导航链接样式 */
 .nav-links {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex; /* 使用 Flexbox 布局 */
-    margin: 0 ; /* 添加负的外边距来实现间隔 */
 }
 
 .nav-links li {
-    flex: 1; /* 均分宽度 */
-    border-left: 1px solid #fff; /* 添加左边框 */
-    border-right: 1px solid #fff; /* 添加右边框 */
-    margin-right: -1px;
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .nav-links li:first-child {
-    border-left: none; /* 去除第一个元素的左边框 */
+    border-left: none;
 }
 
 .nav-links li:last-child {
-    border-right: none; /* 去除最后一个元素的右边框 */
+    border-right: none;
 }
 
 .nav-links li a {
@@ -71,16 +52,14 @@ nav ul li a {
     padding: 10px 0;
     text-decoration: none;
     color: #fff;
-    text-decoration: none; /* 去除下划线 */
-    font-size: 16px; /* 设置字体大小 */
+    font-size: 16px;
     margin: 0 10px; /* 调整链接之间的间距 */
 }
 
-
 .nav-links li a:hover {
-    background-color: #555;
-    /* 鼠标悬停时的背景颜色 */
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
 }
+
 
 .dropdown {
     position: relative;
@@ -197,9 +176,6 @@ h2, h3 {
     display: none;
 }
 
-
-
-
 footer {
     background-color: #333;
     color: #fff;
@@ -251,7 +227,7 @@ footer p {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #4CAF50;
     margin: 0 15px; /* 添加左右间距 */
     text-decoration: none;
     transition: color 0.3s;
