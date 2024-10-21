@@ -6,87 +6,102 @@ body {
     background-color: #f4f4f4;
 }
 
-/* 标题样式 */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
 }
-
-header .title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 header h1 {
-    margin: 0;
-    text-shadow: 4px 4px 8px #000;
+    text-shadow: 10px 10px 4px #000000; /* 添加文字阴影，参数依次为水平偏移、垂直偏移和模糊半径 */
 }
-
-header .logo {
-    max-width: 100px;
-    margin-left: 20px;
+.title-container {
+    display: flex;
+    align-items: center; /* 垂直居中标题和图片 */
 }
-
+.title-text {
+    margin-right: 20px; /* 标题右边距 */
+}
+.title-image {
+    max-width: 200px; /* 图片最大宽度 */
+}
 /* 导航样式 */
 nav {
     background-color: #333;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
     padding: 0;
-    list-style: none;
     margin: 0;
+    display: flex; /* 使用 Flexbox 布局 */
 }
 
 .nav-links li {
-    margin: 0;
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.nav-links li:first-child {
+    border-left: none;
+}
+
+.nav-links li:last-child {
+    border-right: none;
 }
 
 .nav-links li a {
-    color: #fff;
-    padding: 1rem;
-    text-decoration: none;
     display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px; /* 调整链接之间的间距 */
 }
 
 .nav-links li a:hover {
-    background-color: #555;
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
 }
 
-/* 下拉菜单样式 */
 .dropdown {
     position: relative;
+    z-index: 2;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    top: 100%; /* 使下拉列表相对于其父元素（.dropdown）的底部对齐 */
+    left: 5; /* 使下拉列表左边与其父元素的左边对齐 */
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* 居中下拉列表内容 */
 }
 
 .dropdown-content a {
     color: white;
-    padding: 12px;
-    display: block;
+    padding: 12px 16px;
     text-decoration: none;
-    text-align: left;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    /* 修改为你想要的鼠标悬停时的背景颜色 */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 主要内容样式 */
+
 main {
     padding: 2rem;
     background-color: #f9f9f9;
@@ -107,19 +122,46 @@ main {
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
-
 .join-btn {
-    background-color: #28a745;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
-.join-btn:hover {
-    background-color: #218838;
+.join-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 /* 底部样式 */

@@ -71,6 +71,7 @@ nav {
 
 .dropdown {
     position: relative;
+    z-index: 2;
 }
 
 .dropdown-content {
@@ -351,6 +352,7 @@ footer a:hover {
     line-height: 50px;
     text-align: center;
     cursor: pointer;
+    z-index: 2;
 }
 
 .arrow.left {

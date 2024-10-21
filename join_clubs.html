@@ -9,34 +9,32 @@
 <body>
     <header>
         <div class="title-container">
-            <h1>CodeHub——全国编程交流创新平台</h1>
-            <img src="image/10.jpg" alt="CodeHub Logo" class="logo">
+            <h1 class="title-text">CodeHub——全国编程交流创新平台</h1>
+            <img class="title-image" src="image/10.jpg" alt="图片">
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">返回首页</a></li>
+                <li><a href="posts.html" id="postsLink">Code小巷</a></li>
+                <li><a href="create_post.html" id="createPostLink">个人分享</a></li>
+                <li><a href="bug_cracker.html" id="bugCrackerLink">BUG破解站</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">社团</a>
+                    <div class="dropdown-content">
+                        <a href="my_clubs.html" id="myClubsLink">我的社团</a>
+                        <a href="join_clubs.html" id="joinClubsLink">加入社团</a>
+                    </div>
+                </li>
+                <li><a href="study.html" id="studyLink">自习室</a></li>
+                <li><a href="login.html">用户登录</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul class="nav-links">
-            <li><a href="introduce.html">平台简介</a></li>
-            <li><a href="posts.html" id="postsLink">Code小巷</a></li>
-            <li><a href="create_post.html" id="createPostLink">个人分享</a></li>
-            <li><a href="bug_cracker.html" id="bugCrackerLink">BUG破解站</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">社团</a>
-                <div class="dropdown-content">
-                    <a href="my_clubs.html" id="myClubsLink">我的社团</a>
-                    <a href="join_clubs.html" id="joinClubsLink">加入社团</a>
-                </div>
-            </li>
-            <li><a href="study.html" id="studyLink">自习室</a></li>
-            <li><a href="login.html">用户登录</a></li>
-        </ul>
-    </nav>
-
     <main>
         <section id="join-clubs">
             <h2>加入社团</h2>
             <p>找到你感兴趣的编程社团并加入，与更多的编程爱好者一起交流成长！</p>
-            <ul class="club-list">
+            <ul class="club-list" id="clubList">
                 <li class="club-item">
                     <span>茶客帮 - 创建者：二两红茶</span>
                     <button class="join-btn" data-club="茶客帮">加入</button>
@@ -50,7 +48,7 @@
                     <button class="join-btn" data-club="前端先锋">加入</button>
                 </li>
             </ul>
-            <p id="feedback" class="hidden">正在加入社团...</p>
+            <button id="loadMoreBtn">加载更多社团</button>
         </section>
     </main>
 
@@ -63,6 +61,9 @@
         </div>
     </footer>
 
-    <script src="js/joinclubs.js"></script>
+    <!-- 弹出提示框 -->
+    <div id="toast" class="toast">加入成功！</div>
+
+    <script src="templates/joinclubs.js"></script>
 </body>
 </html>

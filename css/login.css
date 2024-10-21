@@ -137,8 +137,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
 /* 创意页眉样式 */
 .creative-header {
     background-image: url('../image/7.jpg'); /* 替换为你喜欢的背景图像 */
@@ -159,7 +157,7 @@ footer a:hover {
 }
 
 .header-content .btn {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .btn {
