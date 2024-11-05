@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-container {
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+}
+
+.nav-links li {
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.nav-links li:first-child {
+    border-left: none;
+}
+
+.nav-links li:last-child {
+    border-right: none;
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px; /* 调整链接之间的间距 */
+}
+
+.nav-links li a:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+}
+
+main {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 视频课程样式 */
+#video-lessons {
+    margin-bottom: 3rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 练习题题库样式 */
+#exercise-library {
+    margin-bottom: 3rem;
+}
+
+.exercise-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.exercise-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.exercise-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#exercise-display {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* 学习资源推荐样式 */
+#study-resources {
+    margin-bottom: 3rem;
+}
+
+.resource-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* 学习讨论区样式 */
+#study-discussion {
+    margin-bottom: 3rem;
+}
+
+.discussion {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    width: 80%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.discussion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .resource-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource {
+        width: 90%;
+    }
+
+    .exercise-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

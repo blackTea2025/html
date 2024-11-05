@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code小巷 - 交流与分享</title>
+    <link rel="stylesheet" href="css/posts.css">
+</head>
+<body>
+    <header>
+        <h1>Code小巷</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">主页</a></li>
+                <li><a href="create_post.html">发布帖子</a></li>
+                <li><a href="my_posts.html">我的帖子</a></li>
+                <li><a href="logout.html">退出</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="search-section">
+            <input type="text" id="searchInput" placeholder="搜索帖子...">
+            <button id="searchButton">搜索</button>
+        </section>
+        
+        <section id="posts-section">
+            <h2>最新帖子</h2>
+            <div class="post">
+                <h3>帖子标题 1</h3>
+                <p>这是帖子内容的简要介绍...</p>
+                <a href="post_detail.html" class="read-more">阅读更多</a>
+            </div>
+            <div class="post">
+                <h3>帖子标题 2</h3>
+                <p>这是帖子内容的简要介绍...</p>
+                <a href="post_detail.html" class="read-more">阅读更多</a>
+            </div>
+            <div class="post">
+                <h3>帖子标题 3</h3>
+                <p>这是帖子内容的简要介绍...</p>
+                <a href="post_detail.html" class="read-more">阅读更多</a>
+            </div>
+            <!-- 添加更多帖子 -->
+        </section>
+
+        <section id="pagination">
+            <button id="prevPage">上一页</button>
+            <button id="nextPage">下一页</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Code小巷. All rights reserved.</p>
+    </footer>
+    
+    <script src="templates/posts.js"></script>
+</body>
+</html>

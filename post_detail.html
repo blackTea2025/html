@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帖子详情 - Code小巷</title>
+    <link rel="stylesheet" href="css/post_detail.css">
+</head>
+<body>
+    <!-- 页头 -->
+    <header>
+        <h1>Code小巷</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">主页</a></li>
+                <li><a href="create_post.html">发布帖子</a></li>
+                <li><a href="my_posts.html">我的帖子</a></li>
+                <li><a href="logout.html">退出</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 主内容 -->
+    <main>
+        <!-- 帖子详细内容 -->
+        <section id="post-detail">
+            <h2>帖子标题示例</h2>
+            <p class="author">作者: 用户名</p>
+            <p class="date">发布日期: 2024-10-24</p>
+            <p class="content">
+                这里是帖子的详细内容。内容可以包含编程相关问题、代码片段、讨论等。此处展示一段示例文本，说明问题的具体细节，用户可以通过阅读这个帖子了解讨论的内容。
+            </p>
+
+            <!-- 评论部分 -->
+            <div class="comments">
+                <h3>评论</h3>
+                <!-- 示例评论 -->
+                <div class="comment">
+                    <p><strong>评论者1:</strong> 这是一个评论内容。很有趣的问题！</p>
+                </div>
+                <div class="comment">
+                    <p><strong>评论者2:</strong> 感谢分享，我也遇到过类似问题！</p>
+                </div>
+                <!-- 可以通过 JavaScript 动态添加评论 -->
+            </div>
+
+            <!-- 评论提交表单 -->
+            <form id="comment-form">
+                <h3>添加评论</h3>
+                <textarea id="commentInput" placeholder="写下你的评论..." required></textarea>
+                <button type="submit">提交评论</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 Code小巷. All rights reserved.</p>
+    </footer>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="templates/post_detail.js"></script>
+</body>
+</html>

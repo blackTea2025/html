@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自习室 - CodeHub</title>
+    <link rel="stylesheet" href="css/study.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="title-text">自习室</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">平台简介</a></li>
+                <li><a href="posts.html">Code小巷</a></li>
+                <li><a href="my_post.html">个人分享</a></li>
+                <li><a href="bug_cracker.html">BUG破解站</a></li>
+                <li><a href="study.html" class="active">自习室</a></li>
+                <li><a href="login.html">用户登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video-lessons">
+            <h2>观看课程视频</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>选择视频课程，提升你的技能。</p>
+        </section>
+
+        <section id="exercise-library">
+            <h2>练习题题库</h2>
+            <div class="exercise-options">
+                <button class="exercise-button" data-topic="python">Python 练习题</button>
+                <button class="exercise-button" data-topic="javascript">JavaScript 练习题</button>
+                <button class="exercise-button" data-topic="webdev">Web开发练习题</button>
+            </div>
+            <div id="exercise-display"></div>
+        </section>
+
+        <section id="study-resources">
+            <h2>学习资源推荐</h2>
+            <div class="resource-container">
+                <div class="resource">
+                    <h3>在线编程挑战</h3>
+                    <p>参与实时编程挑战，提升你的编程能力。</p>
+                    <a href="challenges.html" class="button">开始挑战</a>
+                </div>
+                <div class="resource">
+                    <h3>学习资料下载</h3>
+                    <p>下载最新的编程学习资料，助你学业进步。</p>
+                    <a href="downloads.html" class="button">下载资料</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="study-discussion">
+            <h2>学习讨论区</h2>
+            <div id="discussion-container">
+                <div class="discussion">
+                    <h3>如何高效学习Python？</h3>
+                    <p>分享你的学习方法和经验，帮助彼此成长。</p>
+                    <a href="discussion_detail.html" class="button">查看讨论</a>
+                </div>
+                <div class="discussion">
+                    <h3>JavaScript项目交流</h3>
+                    <p>一起分享和讨论JavaScript项目，获取反馈。</p>
+                    <a href="discussion_detail.html" class="button">查看讨论</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/study.js"></script>
+</body>
+
+</html>
