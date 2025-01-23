@@ -6,34 +6,70 @@ body {
 }
 
 header {
-    background-color: #555;
+    background-color: #444; /* 深灰色背景 */
     color: white;
-    padding: 1rem;
-    text-align: center;
+    padding: 1.5rem 2rem; /* 更大间距，增加上下结构感 */
+    text-align: center; /* 标题居中 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+    align-items: center;
+    gap: 1rem; /* 标题和导航之间的间距 */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* 增强文字阴影 */
 }
 
-nav ul {
+/* 导航样式 */
+nav {
+    background-color: #333; /* 深灰色背景 */
+    padding: 1rem 1.5rem; /* 内间距 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* 细腻阴影 */
+    width: 100%; /* 导航栏占满宽度 */
+    max-width: 800px; /* 设置导航栏最大宽度 */
+}
+
+.nav-links {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* 链接间距均匀分布 */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.nav-links li {
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
-nav ul li a {
-    color: white;
+.nav-links li:first-child {
+    border-left: none;
+}
+
+.nav-links li:last-child {
+    border-right: none;
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px; /* 按钮圆角 */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+.nav-links li a:hover {
+    background-color: #555; /* 鼠标悬停时的背景色 */
+    transform: scale(1.05); /* 放大效果 */
+}
 main {
     padding: 2rem;
 }

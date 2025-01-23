@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建社团 - CodeHub</title>
+    <link rel="stylesheet" href="css/createclub.css">
+</head>
+<body>
+    <header>
+        <h1>创建社团 - CodeHub</h1>
+        <nav>
+            <a href="my_clubs.html">返回</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create-club">
+            <form id="createClubForm">
+                <label for="clubName">社团名称：</label>
+                <input type="text" id="clubName" placeholder="输入社团名称" required>
+
+                <label for="clubDescription">社团描述：</label>
+                <textarea id="clubDescription" placeholder="输入社团描述" required></textarea>
+
+                <label for="clubCategory">选择分类：</label>
+                <select id="clubCategory" required>
+                    <option value="">选择分类</option>
+                    <option value="技术学习">技术学习</option>
+                    <option value="创新开发">创新开发</option>
+                    <option value="兴趣社团">兴趣社团</option>
+                </select>
+                <button typse="submit">创建社团</button>
+            </form>
+            <p id="feedback" class="hidden"></p>
+        </section>
+    </main>
+    <script src="templates/create_club.js"></script>
+</body>
+</html>

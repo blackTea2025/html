@@ -53,11 +53,14 @@ nav {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
     margin: 0 10px; /* 调整链接之间的间距 */
 }
 
 .nav-links li a:hover {
-    background-color: #555; /* 鼠标悬停时的背景颜色 */
+    background-color: #555;
+    transform: scale(1.05);
 }
 
 main {
@@ -71,13 +74,11 @@ main {
 #video-lessons {
     margin-bottom: 3rem;
 }
-
 .video-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
-
 .video-container iframe {
     width: 100%;
     height: 400px;
@@ -85,18 +86,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 /* 练习题题库样式 */
 #exercise-library {
     margin-bottom: 3rem;
 }
-
 .exercise-options {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
-
 .exercise-button {
     background-color: #007bff;
     color: white;
@@ -108,12 +106,10 @@ main {
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
 }
-
 .exercise-button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
-
 #exercise-display {
     text-align: center;
     margin-top: 20px;
@@ -122,18 +118,15 @@ main {
     border-radius: 8px;
     background-color: #f9f9f9;
 }
-
 /* 学习资源推荐样式 */
 #study-resources {
     margin-bottom: 3rem;
 }
-
 .resource-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .resource {
     background-color: #fff;
     border-radius: 10px;
@@ -144,12 +137,10 @@ main {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .resource:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .button {
     display: inline-block;
     background-color: #28a745;
@@ -160,16 +151,12 @@ main {
     margin-top: 10px;
     transition: background-color 0.3s;
 }
-
 .button:hover {
     background-color: #218838;
 }
-
-/* 学习讨论区样式 */
 #study-discussion {
     margin-bottom: 3rem;
 }
-
 .discussion {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -192,11 +179,9 @@ main {
         flex-direction: column;
         align-items: center;
     }
-
     .resource {
         width: 90%;
     }
-
     .exercise-button {
         width: 100%;
         margin: 5px 0;

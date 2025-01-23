@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch('/api/bugs')  // 假设后端有一个 /api/bugs 的API返回bug及分析数据
             .then(response => response.json())
             .then(bugs => {
-                bugsContainer.innerHTML = '';  // 清空当前Bug列表
+                bugsContainer.innerHTML = '';
                 bugs.forEach(bug => {
                     const bugItem = document.createElement('div');
                     bugItem.classList.add('bug-item');
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // 将Bug添加到容器中
                     bugsContainer.appendChild(bugItem);
-
                     // 为每个“查看分析”按钮添加事件
                     bugItem.querySelector('.view-analysis').addEventListener('click', function () {
                         const bugId = this.getAttribute('data-bug-id');
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
               if (data.success) {
                   // 重新加载Bug列表
                   loadBugs();
-                  bugForm.reset();  // 清空表单
+                  bugForm.reset();
               } else {
                   console.error('Error submitting bug:', data);
               }
@@ -59,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 查看Bug的分析
     function viewAnalysis(bugId) {
-        fetch(`/api/bugs/${bugId}/analysis`)  // 获取该bug的分析内容
+        fetch(`/api/bugs/${bugId}/analysis`)
             .then(response => response.json())
             .then(analysis => {
                 analysisContainer.innerHTML = '';  // 清空当前显示的分析

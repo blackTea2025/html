@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     removeButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             var clubItem = this.parentElement;
-            clubItem.remove();  // 删除社团项
+            clubItem.remove();
         });
     });
 
@@ -16,24 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
     var feedback = document.getElementById('feedback');
 
     addClubForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // 阻止表单默认提交行为
+        event.preventDefault();
 
         var newClubName = document.getElementById('newClub').value;
 
-        // 创建新的社团项
         var newClubItem = document.createElement('li');
         newClubItem.classList.add('club-item');
         newClubItem.innerHTML = `${newClubName} <button class="remove-btn">移除</button>`;
-        
-        // 添加移除功能给新社团项
         newClubItem.querySelector('.remove-btn').addEventListener('click', function() {
-            newClubItem.remove(); // 删除新添加的社团项
+            newClubItem.remove();
         });
-
-        // 将新社团项添加到社团列表
         clubList.appendChild(newClubItem);
-
-        // 显示反馈消息
         feedback.textContent = `社团 "${newClubName}" 已成功加入！`;
         feedback.classList.remove('hidden');
 
@@ -56,13 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
         clubItem.addEventListener('click', function() {
             var clubName = this.textContent.replace("移除", "").trim();
             modalContent.textContent = `社团 "${clubName}" 的详细信息即将上线！`;
-            clubModal.style.display = 'block'; // 显示模态框
+            clubModal.style.display = 'block';
         });
     });
-
     // 点击模态框关闭按钮关闭模态框
     closeModal.addEventListener('click', function() {
-        clubModal.style.display = 'none'; // 隐藏模态框
+        clubModal.style.display = 'none';
     });
 
     // 点击模态框外部区域也关闭模态框
@@ -72,12 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // 4. 移动端汉堡菜单功能
+    // 4. 移动端汉堡菜单功能（考虑做不做）
     var hamburgerMenu = document.getElementById('hamburgerMenu');
     var navLinks = document.querySelector('.nav-links');
 
     hamburgerMenu.addEventListener('click', function() {
-        navLinks.classList.toggle('open'); // 切换菜单的显示和隐藏
+        navLinks.classList.toggle('open');
     });
-
 });
